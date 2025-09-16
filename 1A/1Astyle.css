@@ -1,0 +1,167 @@
+body {
+  display: flex;
+  justify-content: center;   /* Centrar horizontalmente */
+  align-items: center;       /* Centrar verticalmente */
+  min-height: 100vh;         /* Ocupa toda la altura de la ventana */
+  background: #eaf1f0;       /* Color de fondo */
+  margin: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+  display: grid;
+  grid-template-rows: 80px auto; /* Encabezado arriba y grilla abajo */
+  gap: 20px;
+  width: 500px;
+}
+
+/* Encabezado superior */
+.encabezado {
+  background: #3198dd;
+  height: 60px;
+  border-radius: 5px;
+}
+
+/* Cuadrícula de 3x3 */
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 120px);
+  gap: 15px;
+}
+
+
+
+/* Cuadro rojo simple (izquierda) */
+.cuadro {
+  background: rgb(240, 72, 42);
+}
+
+/* Cuadro verde con rombo en el centro */
+.caja-rombo {
+  background: rgb(21, 190, 21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rombo {
+  background: rgb(223, 218, 210);
+  transform: rotate(45deg);   /* Rotación para que se vea como rombo */
+  width: 60px;
+  height: 60px;
+  border: 10px solid rgb(38, 105, 105);
+}
+
+/* Cuadro verde simple (derecha) */
+.cuadro2 {
+  background: rgb(8, 236, 111);
+}
+
+
+
+/* Cuadro amarillo con cuadrito interior */
+.cuadritos1 {
+  background: rgb(240, 177, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cuadritos1::after {
+  content: "";
+  width: 60px;
+  height: 65px;
+  background: rgb(100, 209, 77);
+  border: 10px solid rgb(240, 116, 141);
+}
+
+/* Círculo morado */
+.circulo1 {
+  background: purple;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+
+/* Círculo naranja más pequeño */
+.circulo2 {
+  background: rgb(240, 168, 45);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin: auto;
+}
+
+
+
+/* Bloque de barras apiladas */
+.barras {
+  display: flex;
+  flex-direction: column; /* Apilar en columna */
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.naranja-grande {
+  width: 160px;
+  height: 60px;
+  background: rgb(0, 225, 255);
+  border-radius: 6px;
+}
+.naranja-pequena {
+  width: 160px;
+  height: 20px;
+  background: orange;
+  border-radius: 3px;
+}
+.rosa {
+  width: 160px;
+  height: 20px;
+  background: #ff6f91; 
+  border-radius: 3px;
+}
+
+/* Cuadro teal con cuadrito interior */
+.cuadritos2 {
+  background: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 110px;
+  margin: 10px auto 0 auto;
+}
+.cuadritos2::after {
+  content: "";
+  width: 65px;
+  height: 55px;
+  background: white;
+  border: 10px solid lightseagreen;
+}
+
+/* Cuadro fucsia con cuadrito interior */
+.cuadritos3 {
+  background: rgb(238, 16, 190);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cuadritos3::after {
+  content: "";
+  width: 75px;
+  height: 70px;
+  background: rgb(185, 23, 235);
+  border: 10px solid rgb(20, 32, 20);
+}
+
+.cuadro { grid-column: 1; grid-row: 1; }
+.caja-rombo { grid-column: 2; grid-row: 1; }
+.cuadro2 { grid-column: 3; grid-row: 1; }
+
+.cuadritos1 { grid-column: 1; grid-row: 2; }
+.circulo1 { grid-column: 2; grid-row: 2; }
+.circulo2 { grid-column: 3; grid-row: 2; }
+
+.barras { grid-column: 1; grid-row: 3; }
+.cuadritos2 { grid-column: 2; grid-row: 3; }
+.cuadritos3 { grid-column: 3; grid-row: 3; }
