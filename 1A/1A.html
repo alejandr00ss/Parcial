@@ -1,10 +1,56 @@
+<!--
+    Archivo: index_1A.html
+    Descripción: 
+        Página HTML para el Parcial I, Punto 1A de Computación Gráfica.
+        Contiene una estructura principal y una cuadrícula - grid - de elementos gráficos.
+        Los elementos incluyen:
+            - Cuadros simples
+            - Un cuadro verde con un rombo centrado
+            - Cuadros con cuadros internos
+            - Círculos 
+            - Un conjunto de elementos apilados (stacked) con diferentes colores y tamaños 
+        El diseño visual se define en el archivo CSS externo "1AStyle.css".
+        El propósito es mostrar el uso de HTML y CSS para crear composiciones gráficas básicas.
+-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punto 1A</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcial I-Punto: 1A- Computación Gráfica</title>
+  <link rel="stylesheet" href="1AStyle.css">
 </head>
 <body>
+  <div class="contenedor">
+    <div class="encabezado"></div>
+    <div class="cuadricula">
+        <!-- Cuadro simple izquierda -->
+      <div class="cuadro"></div>
+        <!-- Cuadro con rombo  -->
+      <div class="caja-rombo">
+        <div class="rombo"></div>
+      </div>
+        <!-- Cuadro simple derecha -->
+      <div class="cuadro2"></div>
+
+        <!-- Cuadro con cuadrito dentro -->
+      <div class="cuadritos1"></div>
+      <div class="circulo1"></div>
+      <div class="circulo2"></div>
+
+        <!-- Bloque de barras apiladas inferior izquierda -->
+      <div class="barras">
+        <div class="naranja-grande"></div>
+        <div class="naranja-pequena"></div>
+        <div class="rosa"></div>
+        <div class="rosa"></div>
+      </div>
+      
+        <!-- Cuadros con cuadrito dentro -->
+      <div class="cuadritos2"></div>
+      <div class="cuadritos3"></div>
+    </div>
+  </div>
 </body>
+
 </html>
