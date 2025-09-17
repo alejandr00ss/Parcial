@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DepoXpress</title>
-  <link rel="stylesheet" href="Style_2.css">
+  <meta charset="UTF-8"> <!-- Codificación UTF-8 para soportar acentos y caracteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el contenido a móviles y pantallas pequeñas -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <title>DepoXpress</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="Style_2.css"> <!-- Archivo externo de estilos CSS -->
 </head>
 <body>
+  <!-- Encabezado principal -->
   <header>
+    <!-- Logo de la página -->
     <div class="logo">Depo<span>Xpress</span></div>
     
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar noticias..."> <!-- Caja de texto para escribir -->
+      <button type="submit">🔍</button> <!-- Botón con ícono de búsqueda -->
+    </div>
+
+    <!-- Barra de navegación -->
     <nav class="navbar">
-    <ul>
+      <ul>
         <li><a href="#">Fútbol</a></li>
         <li><a href="#">Baloncesto</a></li>
         <li><a href="#">Tenis</a></li>
         <li><a href="#">F1</a></li>
         <li><a href="#">Más</a></li>
-    </ul>
+      </ul>
     </nav>
   </header>
 
+  <!-- Contenido principal -->
   <main>
-   <section class="noticias">
-  <article>
-    <img src="img/Champions.webp" alt="Noticia 1">
-    <div>
-      <h2>Real Madrid vence 2-1 al Marsella en debut de Champions</h2>
+    <!-- Sección de noticias principales -->
+    <section class="noticias">
 
-      <p>Con un doblete de Mbappé desde el punto penal, Real Madrid consigue una victoria trabajada a pesar de jugar con 10 tras la expulsión de Dani Carvajal al minuto 72. </p>
-    </div>
-  </article>
+      <!-- Noticia 1 -->
+      <article>
+        <img src="img/Champions.webp" alt="Noticia 1"> <!-- Imagen de la noticia -->
+        <div>
+          <h2>Real Madrid vence 2-1 al Marsella en debut de Champions</h2>
+          <p>Con un doblete de Mbappé desde el punto penal, Real Madrid consigue una victoria trabajada a pesar de jugar con 10 tras la expulsión de Dani Carvajal al minuto 72. </p>
+        </div>
+      </article>
 
-  <article>
-    <img src="img/Futbol_C.webp" alt="Noticia 2">
-    <div>
-       <h2>Un año dorado del fútbol colombiano </h2>
-       <p>Cinco selecciones lograron su cupo a los mundiales, mientras que la selección femenina aseguró su presencia en los Juegos Olímpicos. Una generación histórica que refleja el cambio de mentalidad en el fútbol colombiano.</p>
-    </div>
-  </article>
+      <!-- Noticia 2 -->
+      <article>
+        <img src="img/Futbol_C.webp" alt="Noticia 2">
+        <div>
+          <h2>Un año dorado del fútbol colombiano </h2>
+          <p>Cinco selecciones lograron su cupo a los mundiales, mientras que la selección femenina aseguró su presencia en los Juegos Olímpicos. Una generación histórica que refleja el cambio de mentalidad en el fútbol colombiano.</p>
+        </div>
+      </article>
 
-  <article>
-    <img src="img/F1.jpg" alt="Noticia 3">
-   <div>
-    <h2>Fórmula 1 planea cambios para 2026</h2>
-    <p>La temporada 2026 traerá nuevo reglamento técnico y ajustes en el formato de las carreras sprint.</p>
-    </div>
-  </article>
-</section>
+      <!-- Noticia 3 -->
+      <article>
+        <img src="img/F1.jpg" alt="Noticia 3">
+        <div>
+          <h2>Fórmula 1 planea cambios para 2026</h2>
+          <p>La temporada 2026 traerá nuevo reglamento técnico y ajustes en el formato de las carreras sprint.</p>
+        </div>
+      </article>
 
+    </section>
+
+    <!-- Barra lateral con titulares rápidos -->
     <aside class="sidebar">
-    <h2>Titulares rápidos</h2>
-    <ul class="titulares">
+      <h2>Titulares rápidos</h2>
+      <ul class="titulares">
         <li><span>●</span> Montreal, Zandvoort y Singapur serán sedes del sprint en F1 2026</li>
         <li><span>●</span> Adidas será socio oficial del equipo Audi F1 desde 2026</li>
         <li><span>●</span> Alpine confirma permanencia en F1 con motor Mercedes en 2026</li>
@@ -59,10 +76,11 @@
         <li><span>●</span> Paisas de Medellín campeón de la Liga Profesional de Baloncesto en Julio 2025</li>
         <li><span>●</span> Open Barranquilla regresa al calendario ATP Challenger</li>
         <li><span>●</span> Colombia gana dos oros en tenis femenino en los Panamericanos Junior</li>
-    </ul>
+      </ul>
     </aside>
   </main>
 
+  <!-- Pie de página -->
   <footer>
     <p>&copy; 2025 DepoXpress - Derechos Computación Gráfica</p>
   </footer>
