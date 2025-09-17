@@ -7,7 +7,7 @@
 
 body { 
   font-family: 'Roboto Condensed', sans-serif; /* Tipo de letra importada */
-  background: #f8f9fa; /* Fondo gris claro */
+  background: #eef3f8; /* Fondo gris claro */
   color: #221818; /* Texto principal en gris oscuro */
 }
 
@@ -17,13 +17,13 @@ header {
   justify-content: space-between;
   align-items: center;
   background: #c70000; /* Rojo fuerte */
-  padding: 15px 20px;
+  padding: 15px 50px;
   color: #fff;
 }
 
 /* Nombre página */
 .logo {
-  font-size: 2rem; /* Tamaño grande */
+  font-size: 3rem; /* Tamaño grande */
   font-weight: 900; /* Muy negrita */
   color: #ffffff; /* Texto blanco */
   letter-spacing: 2px; /* Espaciado entre letras */
@@ -35,16 +35,28 @@ header {
   color: #FFD700; /* Amarillo dorado para resaltar */
 }
 
+/* Íconos de acciones */
+.acciones {
+  display: flex;
+  gap: 60px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.acciones i:hover {
+  color: #FFD700; /* Dorado en hover */
+}
+
 /* Barra navegación */
 nav ul {
   list-style: none; /* Quita viñetas */
   display: flex; /* Ítems en fila */
-  gap: 20px; /* Espacio entre enlaces */
+  gap: 25px; /* Espacio entre enlaces */
 }
 
 nav a {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #FFD700; /* Dorado */
 }
@@ -59,11 +71,11 @@ nav a:hover {
   align-items: center;
   background: #fff;
   border-radius: 20px;
-  padding: 5px 10px;
+  padding: 8px 15px;
 }
 
 .search-bar input {
-  border: none;
+  border: blue;
   outline: none;
   padding: 6px 15px;
   font-size: 0.9rem;
@@ -90,7 +102,7 @@ main {
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* Sombra ligera */
+  box-shadow: 0 2px 6px rgba(37, 36, 36, 0.08); /* Sombra ligera */
 }
 
 .noticias article img {
@@ -149,15 +161,65 @@ main {
 }
 
 /* Derechos -- Pie de página */
-footer {
+.footer {
+  background: #c1121f; /* azul elegante */
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
-  padding: 1rem;
-  background: #111; /* Negro */
-  color: #eee; /* Gris claro */
-  margin-top: 1.5rem;
-}
-.navbar ul li a:hover {
-  background-color: #fff;
-  color: #41df22;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+  border-radius: 10px 10px 0 0;
 }
 
+.footer-social {
+  margin-bottom: 15px;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 22px;
+  margin: 0 12px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ffcc00; /* dorado al pasar el mouse */
+}
+
+.footer-links {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #e0e0e0;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-legal {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #ddd;
+}
+
+.footer-legal a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+.footer-legal a:hover {
+  color: #FFD700; /* Dorado elegante */
+}
+
+.footer-derechos {
+  font-size: 14px;
+  color: #cfd8dc;
+}
