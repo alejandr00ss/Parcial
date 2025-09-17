@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8"> <!-- Codificación UTF-8 para soportar acentos y caracteres especiales -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el contenido a móviles y pantallas pequeñas -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"> <!-- Font Awesome CDN para los íconos -->
   <title>DepoXpress</title> <!-- Título que aparece en la pestaña del navegador -->
   <link rel="stylesheet" href="Style_2.css"> <!-- Archivo externo de estilos CSS -->
 </head>
@@ -13,10 +14,17 @@
     <!-- Logo de la página -->
     <div class="logo">Depo<span>Xpress</span></div>
     
+    <div class="acciones">
+      <i class="fas fa-bars" title="Menú"></i>
+      <i class="fas fa-user-plus" title="Crear cuenta"></i>
+      <i class="fas fa-globe" title="Cambiar idioma"></i>
+      <i class="fas fa-universal-access" title="Accesibilidad"></i>
+    </div>
+
     <!-- Barra de búsqueda -->
     <div class="search-bar">
-      <input type="text" placeholder="Buscar noticias..."> <!-- Caja de texto para escribir -->
-      <button type="submit">🔍</button> <!-- Botón con ícono de búsqueda -->
+      <input type="text" placeholder="Buscar noticias..."> 
+      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button> 
     </div>
 
     <!-- Barra de navegación -->
@@ -81,8 +89,31 @@
   </main>
 
   <!-- Pie de página -->
-  <footer>
-    <p>&copy; 2025 DepoXpress - Derechos Computación Gráfica</p>
+  <footer class="footer">
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Inicio</a>
+      <a href="#">Sobre Nosotros</a>
+      <a href="#">Equipo</a>
+      <a href="#">Contacto</a>
+      <a href="#">Videos</a>
+    </div>
+
+    <div class="footer-legal">
+      <a href="#">Política de uso</a> |
+      <a href="#">Política de cookies</a> |
+      <a href="#">Aviso legal</a>
+    </div>
+
+    <div class="footer-derechos">
+      <p>©2025 | Derechos Computación Gráfica</p>
+    </div>
   </footer>
 </body>
 </html>
