@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="estilo_principal.css">
+</head>
+<body>
+    <header class="barra-superior">
+        <label for="menu-toggle" class="menu-hamburguesa" aria-label="Mostrar u ocultar menú">
+            <span class="icono-material">menu</span>
+        </label>
+        <div class="usuario-info">
+            <span class="icono-material">account_circle</span>
+            <span>Usuario</span>
+        </div>
+    </header>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+    
+    <aside class="barra-lateral">
+        <h2>Panel de Control</h2>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">
+                    <span class="icono-material">dashboard</span>Inicio
+                </a></li>
+                <li><a href="ingresos.html">
+                    <span class="icono-material">payments</span>Ingresos
+                </a></li>
+                <li><a href="gastos.html">
+                    <span class="icono-material">shopping_cart</span>Gastos
+                </a></li>
+                <li><a href="reportes.html" class="active">
+                    <span class="icono-material">bar_chart</span>Reportes
+                </a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <h1>Reportes</h1>
+        
+        <div class="filtros">
+            <label><input type="radio" name="periodo" checked> Este Mes</label>
+            <label><input type="radio" name="periodo"> Último Trimestre</label>
+            <label><input type="radio" name="periodo"> Este Año</label>
+        </div>
+
+        <div class="grid-reportes">
+
+            <div class="resumen-tarjeta">
+                <h3>Resumen del Período</h3>
+                <div class="datos-resumen">
+                    <div class="dato">
+                        <span class="icono-material">trending_up</span>
+                        <div>
+                            <p>Total Ingresos</p>
+                            <h4>$5,000</h4>
+                        </div>
+                    </div>
+                    <div class="dato">
+                        <span class="icono-material">trending_down</span>
+                        <div>
+                            <p>Total Gastos</p>
+                            <h4>$2,500</h4>
+                        </div>
+                    </div>
+                    <div class="dato">
+                        <span class="icono-material">savings</span>
+                        <div>
+                            <p>Ahorro</p>
+                            <h4>$2,500</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabla-resumen" role="region" aria-label="Resumen detallado mensual">
+                <h2>Resumen Detallado</h2>
+                <div class="tabla-container">
+                    <table class="tabla-datos" role="table" aria-label="Tabla de resumen financiero mensual">
+                        <thead>
+                            <tr>
+                                <th>Mes</th>
+                                <th>Ingresos</th>
+                                <th>Gastos</th>
+                                <th>Balance</th>
+                                <th>Ahorro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Enero</td>
+                                <td class="ingresos">$8,000</td>
+                                <td class="gastos">$6,000</td>
+                                <td class="positivo">$2,000</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>Febrero</td>
+                                <td class="ingresos">$6,500</td>
+                                <td class="gastos">$4,500</td>
+                                <td class="positivo">$2,000</td>
+                                <td>31%</td>
+                            </tr>
+                            <tr>
+                                <td>Marzo</td>
+                                <td class="ingresos">$9,000</td>
+                                <td class="gastos">$7,000</td>
+                                <td class="positivo">$2,000</td>
+                                <td>22%</td>
+                            </tr>
+                            <tr>
+                                <td>Abril</td>
+                                <td class="ingresos">$7,500</td>
+                                <td class="gastos">$5,000</td>
+                                <td class="positivo">$2,500</td>
+                                <td>33%</td>
+                            </tr>
+                            <tr>
+                                <td>Mayo</td>
+                                <td class="ingresos">$8,500</td>
+                                <td class="gastos">$6,500</td>
+                                <td class="positivo">$2,000</td>
+                                <td>24%</td>
+                            </tr>
+                            <tr>
+                                <td>Junio</td>
+                                <td class="ingresos">$7,000</td>
+                                <td class="gastos">$5,500</td>
+                                <td class="positivo">$1,500</td>
+                                <td>21%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tendencias-seccion" role="region" aria-label="Análisis de tendencias financieras">
+                <h2>Análisis de Tendencias</h2>
+                <div class="tendencias-grid">
+                                <div class="tarjeta-tendencia" role="article" aria-labelledby="ingreso-promedio">
+                <span class="icono-material" aria-hidden="true">trending_up</span>
+                <h3 id="ingreso-promedio">Ingreso Promedio</h3>
+                <p aria-label="Ingreso promedio: 7,750 pesos">$7,750</p>
+                <small aria-label="Ha aumentado un 5% comparado con el mes anterior">+5% vs mes anterior</small>
+            </div>
+            <div class="tarjeta-tendencia" role="article" aria-labelledby="gasto-promedio">
+                <span class="icono-material" aria-hidden="true">trending_down</span>
+                <h3 id="gasto-promedio">Gasto Promedio</h3>
+                <p aria-label="Gasto promedio: 5,750 pesos">$5,750</p>
+                <small aria-label="Ha disminuido un 2% comparado con el mes anterior">-2% vs mes anterior</small>
+            </div>
+                    <div class="tarjeta-tendencia" role="article" aria-labelledby="tasa-ahorro">
+                        <span class="icono-material" aria-hidden="true">savings</span>
+                        <h3 id="tasa-ahorro">Tasa de Ahorro</h3>
+                        <p aria-label="26 por ciento">26%</p>
+                        <small aria-label="Incremento del 3% respecto al mes anterior">+3% vs mes anterior</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

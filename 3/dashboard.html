@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panel de control financiero - Dashboard principal">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="estilo_principal.css">
+</head>
+<body>
+    <header class="barra-superior" role="banner">
+        <label for="menu-toggle" class="menu-hamburguesa" aria-label="Mostrar u ocultar menú principal">
+            <span class="icono-material" aria-hidden="true">menu</span>
+        </label>
+        <div class="usuario-info" role="region" aria-label="Datos del usuario actual">
+            <span class="icono-material" aria-hidden="true">account_circle</span>
+            <span>Usuario</span>
+        </div>
+    </header>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    
+    <aside class="barra-lateral" role="navigation" aria-label="Navegación principal del sitio">
+        <h2>Panel de Control</h2>
+        <nav>
+            <ul role="menubar">
+                <li role="none">
+                    <a href="dashboard.html" class="active" role="menuitem" aria-current="page" aria-label="Página actual: Panel principal">
+                        <span class="icono-material" aria-hidden="true">dashboard</span>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="ingresos.html" role="menuitem">
+                        <span class="icono-material" aria-hidden="true">payments</span>
+                        <span>Ingresos</span>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="gastos.html" role="menuitem">
+                        <span class="icono-material" aria-hidden="true">shopping_cart</span>
+                        <span>Gastos</span>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="reportes.html" role="menuitem">
+                        <span class="icono-material" aria-hidden="true">bar_chart</span>
+                        <span>Reportes</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="contenido-panel" role="main">
+        <h1>Inicio</h1>
+        <div class="cuadricula-tarjetas" role="region" aria-label="Resumen de finanzas">
+            <div class="tarjeta saldo" role="article">
+                <span class="icono-material" aria-hidden="true">account_balance_wallet</span>
+                <h3>Saldo Total</h3>
+                <p aria-label="Tu saldo actual es de 12,000 pesos">$12,000</p>
+                <div class="barra-progreso" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progreso" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="tarjeta ingresos" role="article">
+                <span class="icono-material" aria-hidden="true">trending_up</span>
+                <h3>Ingresos del Mes</h3>
+                <p aria-label="Este mes has ingresado 5,000 pesos">$5,000</p>
+                <div class="barra-progreso" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progreso" style="width: 60%"></div>
+                </div>
+            </div>
+            <div class="tarjeta gastos" role="article">
+                <span class="icono-material" aria-hidden="true">trending_down</span>
+                <h3>Gastos del Mes</h3>
+                <p aria-label="Este mes has gastado 2,500 pesos">$2,500</p>
+                <div class="barra-progreso" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progreso" style="width: 45%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-grafico" role="region" aria-label="Resumen mensual en gráfico">
+            <h2>Resumen Mensual</h2>
+            <div class="contenedor-barras" role="group" aria-label="Gráfico de barras mensual">
+                <div class="barra" style="height: 60%" role="graphics-symbol" aria-label="Enero tiene un valor del 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>Ene</span></div>
+                <div class="barra" style="height: 80%" role="graphics-symbol" aria-label="Febrero tiene un valor del 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span>Feb</span></div>
+                <div class="barra" style="height: 40%" role="graphics-symbol" aria-label="Marzo tiene un valor del 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><span>Mar</span></div>
+                <div class="barra" style="height: 70%" role="graphics-symbol" aria-label="Abril: 70% del máximo" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span>Abr</span></div>
+                <div class="barra" style="height: 90%" role="graphics-symbol" aria-label="Mayo: 90% del máximo" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span>May</span></div>
+                <div class="barra" style="height: 50%" role="graphics-symbol" aria-label="Junio: 50% del máximo" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span>Jun</span></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

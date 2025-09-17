@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h2>Registro</h2>
+        <span class="icono-material" aria-hidden="true">person_add</span>
+        <form aria-label="Formulario de registro de usuario">
+            <label for="usuario">Usuario</label>
+            <input type="text" 
+                   id="usuario" 
+                   name="usuario" 
+                   required 
+                   autocomplete="username" 
+                   placeholder="Crea un usuario nuevo"
+                   aria-required="true">
+            
+            <label for="correo">Email</label>
+            <input type="email" 
+                   id="correo" 
+                   name="correo" 
+                   required 
+                   placeholder="Ingresa tu correo electrónico"
+                   aria-required="true">
+            
+            <label for="clave">Contraseña</label>
+            <input type="password" 
+                   id="clave" 
+                   name="clave" 
+                   required 
+                   autocomplete="new-password" 
+                   placeholder="Crea una contraseña"
+                   aria-required="true">
+
+            <label for = "clave-confirmacion">Confirmar Contraseña</label>
+            <input type="password"
+                   id="clave-confirmacion"
+                   name="clave-confirmacion"
+                   required
+                   autocomplete="new-password"
+                   placeholder="Confirma tu contraseña"
+                   aria-required="true">
+            
+            <label for="terminos">
+                <input type="checkbox" 
+                       id="terminos" 
+                       name="terminos" 
+                       required 
+                       aria-required="true"> 
+                Acepto los términos y condiciones
+            </label>
+            
+            <button type="submit" aria-label="Crear cuenta nueva">
+                Registrarse
+            </button>
+        </form>
+        <p>¿Ya tienes una cuenta? <a href="inicio_sesion.html" aria-label="Ir a inicio de sesión">Inicia sesión aquí</a></p>
+    </div>
+</body>
+</html>

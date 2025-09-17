@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="estilo_principal.css">
+</head>
+<body>
+    <header class="barra-superior">
+        <label for="menu-toggle" class="menu-hamburguesa">
+            <span class="icono-material">menu</span>
+        </label>
+        <div class="usuario-info">
+            <span class="icono-material">account_circle</span>
+            <span>Usuario</span>
+        </div>
+    </header>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    
+    <aside class="barra-lateral">
+        <h2>Panel de Control</h2>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">
+                    <span class="icono-material">dashboard</span>Inicio
+                </a></li>
+                <li><a href="ingresos.html">
+                    <span class="icono-material">payments</span>Ingresos
+                </a></li>
+                <li><a href="gastos.html" class="active">
+                    <span class="icono-material">shopping_cart</span>Gastos
+                </a></li>
+                <li><a href="reportes.html">
+                    <span class="icono-material">bar_chart</span>Reportes
+                </a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <h1>Gastos</h1>
+        <div class="cuadricula-tarjetas">
+            <div class="tarjeta gastos" role="article" aria-label="Resumen de gastos">
+                <span class="icono-material" aria-hidden="true">trending_down</span>
+                <h3>Total Gastos</h3>
+                <p aria-label="Total de gastos: 2,500 pesos">$2,500</p>
+                <div class="barra-progreso" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progreso" style="width: 45%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="categorias-gastos" role="region" aria-label="Gastos por categoría">
+            <div class="categoria" role="article" aria-label="Categoría: Alimentación">
+                <span class="icono-material" aria-hidden="true">restaurant</span>
+                <h4>Alimentación</h4>
+                <p aria-label="Gasto en alimentación: 800 pesos">$800</p>
+                <div class="barra-progreso" role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progreso" style="width: 32%"></div>
+                </div>
+            </div>
+            <div class="categoria" role="article" aria-label="Categoría: Vivienda">
+                <span class="icono-material" aria-hidden="true">home</span>
+                <h4>Vivienda</h4>
+                <p aria-label="Gasto en vivienda: 1,000 pesos">$1,000</p>
+                <div class="barra-progreso" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progreso" style="width: 40%"></div>
+                </div>
+            </div>
+            <div class="categoria" role="article" aria-label="Categoría: Transporte">
+                <span class="icono-material" aria-hidden="true">directions_car</span>
+                <h4>Transporte</h4>
+                <p aria-label="Gasto en transporte: 700 pesos">$700</p>
+                <div class="barra-progreso" role="progressbar" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progreso" style="width: 28%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filtros">
+            <label><input type="radio" name="periodo" checked> Este Mes</label>
+            <label><input type="radio" name="periodo"> Último Trimestre</label>
+            <label><input type="radio" name="periodo"> Este Año</label>
+        </div>
+
+        <table class="tabla-datos">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Concepto</th>
+                    <th>Categoría</th>
+                    <th>Monto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>05/09/2025</td>
+                    <td>Supermercado</td>
+                    <td>Alimentación</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>10/09/2025</td>
+                    <td>Alquiler</td>
+                    <td>Vivienda</td>
+                    <td>$1,000</td>
+                </tr>
+                <tr>
+                    <td>15/09/2025</td>
+                    <td>Gasolina</td>
+                    <td>Transporte</td>
+                    <td>$200</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

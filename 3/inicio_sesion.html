@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h2>Inicio de sesión</h2>
+        <span class="icono-material" aria-hidden="true">account_circle</span>
+        <form aria-label="Formulario de inicio de sesión">
+            <label for="usuario">Usuario</label>
+            <input type="text" 
+                   id="usuario" 
+                   name="usuario" 
+                   required 
+                   autocomplete="username" 
+                   placeholder="Escribe tu nombre de usuario"
+                   aria-required="true">
+            
+            <label for="clave">Contraseña</label>
+            <input type="password" 
+                   id="clave" 
+                   name="clave" 
+                   required 
+                   autocomplete="current-password" 
+                   placeholder="Escribe tu contraseña"
+                   aria-required="true">
+            
+            <button type="submit" 
+                    formaction="dashboard.html"
+                    aria-label="Botón para iniciar sesión">
+                Entrar
+            </button>
+        </form>
+        <p>¿Primera vez aquí? <a href="registro.html" aria-label="Ir a la página de registro">Crea tu cuenta</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+
+:root {
+    --color-principal: #2196f3;
+    --color-principal-oscuro: #1769aa;
+    --color-fondo: #2195f3dd;
+    --color-blanco: #fff;
+    --color-texto: #333;
+    --color-texto-claro: #666;
+    --color-error: #f44336;
+    --sombra-chica: 0 2px 4px rgba(0,0,0,0.1);
+    --sombra-mediana: 0 4px 8px rgba(0,0,0,0.1);
+    --borde-chico: 4px;
+    --borde-grande: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor-formulario {
+    width: 100%;
+    max-width: 400px;
+    padding: 35px;
+    background-color: var(--color-blanco);
+    box-shadow: var(--sombra-mediana);
+    border-radius: var(--borde-grande);
+    text-align: center;
+}
+
+.contenedor-formulario > form {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.icono-material {
+    font-family: 'Material Symbols Outlined';
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 40;
+    font-size: 60px;
+    color: var(--color-principal);
+    margin-bottom: 20px;
+    display: block;
+    line-height: 1;
+    user-select: none;
+}
+
+.contenedor-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.contenedor-formulario label {
+    text-align: left;
+    font-weight: 500;
+    color: var(--color-texto);
+    font-size: 0.95em;
+}
+
+.contenedor-formulario label[for="terminos"] {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: normal;
+}
+
+.contenedor-formulario input[type="text"],
+.contenedor-formulario input[type="password"],
+.contenedor-formulario input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--color-texto-claro);
+    border-radius: var(--borde-chico);
+    font-size: 1em;
+    transition: all 0.3s ease;
+    background-color: var(--color-blanco);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.contenedor-formulario input:focus {
+    border-color: var(--color-principal);
+    outline: none;
+    box-shadow: var(--sombra-chica);
+}
+
+.contenedor-formulario input:invalid:not(:placeholder-shown) {
+    border-color: var(--color-error);
+}
+
+.contenedor-formulario input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    cursor: pointer;
+    accent-color: var(--color-principal);
+}
+
+.contenedor-formulario button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: var(--borde-chico);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.contenedor-formulario button:hover {
+    background-color: var(--color-principal-oscuro);
+    transform: translateY(-1px);
+    box-shadow: var(--sombra-chica);
+}
+
+.contenedor-formulario button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.contenedor-formulario button:focus {
+    outline: 2px solid var(--color-principal);
+    outline-offset: 2px;
+}
+
+.contenedor-formulario p {
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: var(--color-texto);
+}
+
+.contenedor-formulario a {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contenedor-formulario a:hover,
+.contenedor-formulario a:focus {
+    color: var(--color-principal-oscuro);
+    text-decoration: underline;
+}
+
+.contenedor-formulario a:focus {
+    outline: 2px solid var(--color-principal);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+@media (max-width: 500px) {
+    .contenedor-formulario {
+        padding: 25px 20px;
+        max-width: 95vw;
+    }
+    
+    .contenedor-formulario > form {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .icono-material {
+        font-size: 40px;
+    }
+    
+    .contenedor-formulario input[type="text"],
+    .contenedor-formulario input[type="password"],
+    .contenedor-formulario input[type="email"],
+    .contenedor-formulario button {
+        width: 100%;
+    }
+}

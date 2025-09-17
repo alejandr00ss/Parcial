@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="estilo_principal.css">
+</head>
+<body>
+    <header class="barra-superior">
+        <label for="menu-toggle" class="menu-hamburguesa">
+            <span class="icono-material">menu</span>
+        </label>
+        <div class="usuario-info">
+            <span class="icono-material">account_circle</span>
+            <span>Usuario</span>
+        </div>
+    </header>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    
+    <aside class="barra-lateral">
+        <h2>Panel de Control</h2>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">
+                    <span class="icono-material">dashboard</span>Inicio
+                </a></li>
+                <li><a href="ingresos.html" class="active">
+                    <span class="icono-material">payments</span>Ingresos
+                </a></li>
+                <li><a href="gastos.html">
+                    <span class="icono-material">shopping_cart</span>Gastos
+                </a></li>
+                <li><a href="reportes.html">
+                    <span class="icono-material">bar_chart</span>Reportes
+                </a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <h1>Ingresos</h1>
+        <div class="cuadricula-tarjetas">
+            <div class="tarjeta ingresos" role="article" aria-label="Resumen de ingresos">
+                <span class="icono-material" aria-hidden="true">trending_up</span>
+                <h3>Total Ingresos</h3>
+                <p aria-label="Total de ingresos: 5,000 pesos">$5,000</p>
+                <div class="barra-progreso" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progreso" style="width: 60%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filtros" role="group" aria-label="Filtros de período">
+            <label><input type="radio" name="periodo" checked aria-label="Ver datos de este mes"> Este Mes</label>
+            <label><input type="radio" name="periodo" aria-label="Ver datos del último trimestre"> Último Trimestre</label>
+            <label><input type="radio" name="periodo" aria-label="Ver datos de este año"> Este Año</label>
+        </div>
+
+        <table class="tabla-datos">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Concepto</th>
+                    <th>Categoría</th>
+                    <th>Monto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01/09/2025</td>
+                    <td>Salario</td>
+                    <td>Trabajo</td>
+                    <td>$3,000</td>
+                </tr>
+                <tr>
+                    <td>15/09/2025</td>
+                    <td>Inversiones</td>
+                    <td>Dividendos</td>
+                    <td>$1,500</td>
+                </tr>
+                <tr>
+                    <td>20/09/2025</td>
+                    <td>Freelance</td>
+                    <td>Trabajo</td>
+                    <td>$500</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
