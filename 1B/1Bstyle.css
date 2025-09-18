@@ -1,0 +1,157 @@
+/* ---- Reset Básico ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5; /* Un fondo global gris claro */
+}
+
+/* ---- Contenedor Principal ---- */
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ---- Barra Superior ---- */
+.barra-superior {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #333; /* Un gris más oscuro */
+    min-height: 75px; /* Altura mínima en lugar de fija */
+    padding: 0 20px;
+}
+
+.elemento-superior {
+    background-color: #f0f2f5;
+    height: 30px;/* Ancho fijo para los elementos */
+}
+
+.barra-superior .elemento-superior:nth-child(1) {
+    width: 400px;
+}
+
+.barra-superior .elemento-superior:nth-child(2) {
+    width: 200px;
+}
+
+.barra-superior .elemento-superior:nth-child(3) {
+    width: 400px;
+}
+
+.barra-superior .elemento-superior:nth-child(4) {
+    width: 200px;
+}
+
+.barra-superior .elemento-superior:nth-child(5) {
+    width: 200px;
+}
+
+/* ---- Contenido Principal (2 columnas) ---- */
+.contenido {
+    display: flex;
+    flex-grow: 1; /* Permite que esta sección ocupe el resto del espacio vertical */
+}
+
+/* ---- Rejilla Izquierda ---- */
+.contenedor-rejilla {
+    flex: 3; /* Ocupa 3 partes del espacio */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.elemento-rejilla {
+    background-color: #e0e0e0; /* Un gris más claro */
+    border-radius: 8px; /* Bordes redondeados sutiles */
+}
+
+/* ---- Panel de Información Derecho ---- */
+.panel-informacion {
+    flex: 1.15; /* Ocupa 1.5 partes del espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #222; /* Un negro/gris muy oscuro */
+    padding: 20px;
+}
+
+/* ---- Sección de Perfil (círculo y barras pequeñas) ---- */
+.seccion-perfil {
+    display: flex;
+    justify-content: space-between; /* Empuja los elementos a los extremos */
+    align-items: center; /* Alinea en el centro */
+}
+
+.info-texto-perfil {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.barra-corta {
+    height: 18px;
+}
+.info-texto-perfil .barra-corta:nth-child(1) {
+    background-color: #d17a7a;
+    width: 110px;
+}
+.info-texto-perfil .barra-corta:nth-child(2) {
+    background-color: #a95e5eab;
+    width: 95px;
+}
+.info-texto-perfil .barra-corta:nth-child(3) {
+    background-color: #a95e5e5e;
+    width: 80px;
+}
+
+.circulo-perfil {
+    width: 130px;
+    height: 130px;
+    margin-top: 30px;
+    background-color: #e4b400;
+    border-radius: 50%;
+    flex-shrink: 0; /* Evita que el círculo se encoja */
+}
+
+/* ---- Contenedor de Barras Inferiores ---- */
+.contenedor-barras {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.barra {
+    height: 12px;
+}
+
+/* Clases de color y tamaño para las barras */
+.rosa { background-color: #d17a7a; }
+.amarilla { background-color: #e4b400; }
+.verde { background-color: #4CAF50; }
+
+/* Anchos basados en porcentaje del contenedor padre */
+.contenedor-barras .barra:nth-child(1) { width: 75%; }
+.contenedor-barras .barra:nth-child(2) { width: 55%; }
+.contenedor-barras .barra:nth-child(3) { width: 60%; }
+.contenedor-barras .barra:nth-child(4) { width: 73%; }
+.contenedor-barras .barra:nth-child(5) { width: 30%; }
+.contenedor-barras .barra:nth-child(6) { width: 54%; }
+.contenedor-barras .barra:nth-child(7) { width: 71%; }
+.contenedor-barras .barra:nth-child(8) { width: 5%; }
+.contenedor-barras .barra:nth-child(9) { width: 58%; }
+.contenedor-barras .barra:nth-child(10) { width: 69%; }
+.contenedor-barras .barra:nth-child(11) { width: 40%; }
